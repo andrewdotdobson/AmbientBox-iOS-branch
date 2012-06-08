@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:f44595e2f72117f0c6da105ab115e89e$ -->
+<TextureAtlas imagePath="azure.png">
+    <SubTexture name="button-disabled-skin" x="187" y="325" width="32" height="88"/>
+    <SubTexture name="button-down-skin" x="167" y="417" width="32" height="88"/>
+    <SubTexture name="button-up-skin" x="131" y="417" width="32" height="88"/>
+    <SubTexture name="inset-left" x="223" y="325" width="16" height="88"/>
+    <SubTexture name="inset-right" x="203" y="417" width="16" height="88"/>
+    <SubTexture name="inset-skin" x="95" y="417" width="32" height="88"/>
+    <SubTexture name="lato30_0" x="3" y="3" width="254" height="318" frameX="0" frameY="0" frameWidth="256" frameHeight="320"/>
+    <SubTexture name="list-item-down-skin" x="235" y="417" width="8" height="88"/>
+    <SubTexture name="list-item-up-skin" x="223" y="417" width="8" height="88"/>
+    <SubTexture name="picker-icon" x="243" y="325" width="42" height="70"/>
+    <SubTexture name="slider-thumb-disabled-skin" x="95" y="325" width="88" height="88"/>
+    <SubTexture name="slider-thumb-down-skin" x="3" y="417" width="88" height="88"/>
+    <SubTexture name="slider-thumb-up-skin" x="3" y="325" width="88" height="88"/>
+    <SubTexture name="slider-track-disabled-skin" x="247" y="471" width="48" height="32" frameX="0" frameY="-28" frameWidth="48" frameHeight="88"/>
+    <SubTexture name="slider-track-down-skin" x="247" y="435" width="48" height="32" frameX="0" frameY="-28" frameWidth="48" frameHeight="88"/>
+    <SubTexture name="slider-track-up-skin" x="247" y="399" width="48" height="32" frameX="0" frameY="-28" frameWidth="48" frameHeight="88"/>
+</TextureAtlas>

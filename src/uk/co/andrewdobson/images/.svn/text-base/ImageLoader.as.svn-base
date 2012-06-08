@@ -1,0 +1,49 @@
+﻿package uk.co.andrewdobson.images 
+{
+	import flash.display.Loader;
+	import flash.display.Sprite;
+	import flash.events.Event;
+	import flash.events.ProgressEvent;
+	import flash.net.URLRequest;
+	
+	/**
+	 * ...
+	 * @author Andrew DObson
+	 */
+	public class ImageLoader extends Sprite
+	{
+		private var loader:Loader;
+		public var caption:String;
+		private var _u:String;
+		public function ImageLoader(u:String) 
+		{
+			_u = u;
+			loader = new Loader();
+			loader.contentLoaderInfo.addEventListener(ProgressEvent.PROGRESS, progressHandler);
+			loader.contentLoaderInfo.addEventListener(Event.COMPLETE, completeHandler);
+			
+			loader.load(new URLRequest(u));
+		}
+		
+		private function progressHandler(e:ProgressEvent):void
+		{
+			//trace(Math.round((e.bytesLoaded / e.bytesTotal)*100));
+		}
+		
+		private function completeHandler(e:Event):void
+		{
+			this.addChild(loader);
+			dispatchEvent(new Event(Event.COMPLETE));
+		}
+		public function get url():String
+		{
+			return _u;
+		}
+		
+		public function set url(v:String):void
+		{
+			_u = v;
+		}
+	}
+	
+}
